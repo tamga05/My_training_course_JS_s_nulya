@@ -2,10 +2,10 @@
 
 // window.alert("Привет, Андрей!!!");
 
-// document.getElementById
+// Урок 08 document.getElementById
 
 let myVar1;
-myVar1 = 'myDiv';
+myVar1 = "myDiv";
 
 let viewVar1;
 viewVar1 = document.getElementById(myVar1);
@@ -14,3 +14,6 @@ window.alert(viewVar1.id);
 window.alert(viewVar1.className);
 window.alert(viewVar1.title);
 window.alert(viewVar1.style);
+window.alert(viewVar1.contentEditable);
+
+// Урок 09
