@@ -16,14 +16,81 @@
 // window.alert(viewVar1.style);
 // window.alert(viewVar1.contentEditable);
 
-
 // Урок 11 function
 
-function alertABC() {
-    window.alert('1');
-    window.alert('2');
-    window.alert('3');
-    window.alert('4');
+// function alertABC() {
+//     // window.alert('1');
+//     // window.alert('2');
+//     // window.alert('3');
+//     // window.alert('4');
+//     console.log('123');
+//     console.log('234');
+//     console.log('345');
+//     console.log('456');
+// }
+
+// alertABC();
+// alertABC();
+// alertABC();
+
+// function myName() {
+//     window.alert('Andrey');
+// }
+
+// myName();
+
+// Урок 12 Параметры функции
+
+let myId1;
+myId1 = "myDiv1";
+let viewDiv1;
+viewDiv1 = document.getElementById(myId1);
+
+// console.log(viewDiv1.id);
+// console.log(viewDiv1.className);
+// console.log(viewDiv1.title);
+
+let myId2;
+myId2 = "myDiv2";
+let viewDiv2;
+viewDiv2 = document.getElementById(myId2);
+
+// console.log(viewDiv2.id);
+// console.log(viewDiv2.className);
+// console.log(viewDiv2.title);
+
+let myId3;
+myId3 = "myDiv3";
+let viewDiv3;
+viewDiv3 = document.getElementById(myId3);
+
+function viewParams(param) {
+	console.log(param.id);
+	console.log(param.className);
+	console.log(param.title);
 }
 
-alertABC();
+viewParams(viewDiv1);
+viewParams(viewDiv2);
+viewParams(viewDiv3);
+
+// let const2;
+// let const3;
+
+// const2 = "myDiv2";
+// const3 = "myDiv3";
+
+// let viewConst2;
+// let viewConst3;
+
+// viewConst2 = document.getElementById(const2);
+// viewConst3 = document.getElementById(const3);
+
+// debugger;
+// function showParams(viewConst1) {
+//     console.log(viewConst1.id);
+//     console.log(viewConst1.className);
+//     console.log(viewConst1.title);
+// }
+
+// showParams(viewConst1);
