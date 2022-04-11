@@ -39,40 +39,41 @@
 
 // myName();
 
+
 // Урок 12 Параметры функции
 
-let myId1;
-myId1 = "myDiv1";
-let viewDiv1;
-viewDiv1 = document.getElementById(myId1);
+// let myId1;
+// myId1 = "myDiv1";
+// let viewDiv1;
+// viewDiv1 = document.getElementById(myId1);
 
-// console.log(viewDiv1.id);
-// console.log(viewDiv1.className);
-// console.log(viewDiv1.title);
+// // console.log(viewDiv1.id);
+// // console.log(viewDiv1.className);
+// // console.log(viewDiv1.title);
 
-let myId2;
-myId2 = "myDiv2";
-let viewDiv2;
-viewDiv2 = document.getElementById(myId2);
+// let myId2;
+// myId2 = "myDiv2";
+// let viewDiv2;
+// viewDiv2 = document.getElementById(myId2);
 
-// console.log(viewDiv2.id);
-// console.log(viewDiv2.className);
-// console.log(viewDiv2.title);
+// // console.log(viewDiv2.id);
+// // console.log(viewDiv2.className);
+// // console.log(viewDiv2.title);
 
-let myId3;
-myId3 = "myDiv3";
-let viewDiv3;
-viewDiv3 = document.getElementById(myId3);
+// let myId3;
+// myId3 = "myDiv3";
+// let viewDiv3;
+// viewDiv3 = document.getElementById(myId3);
 
-function viewParams(param) {
-	console.log(param.id);
-	console.log(param.className);
-	console.log(param.title);
-}
+// function viewParams(param) {
+// 	console.log(param.id);
+// 	console.log(param.className);
+// 	console.log(param.title);
+// }
 
-viewParams(viewDiv1);
-viewParams(viewDiv2);
-viewParams(viewDiv3);
+// viewParams(viewDiv1);
+// viewParams(viewDiv2);
+// viewParams(viewDiv3);
 
 // let const2;
 // let const3;
@@ -94,3 +95,37 @@ viewParams(viewDiv3);
 // }
 
 // showParams(viewConst1);
+
+
+// let abc = 3 ** 5;
+// let def = -8 / (-4);
+
+// alert(abc);
+// alert(def);
+
+//console.log("\\ \\ \\\\ \\\ \'\"");
+
+// console.log(String.fromCharCode(33));
+
+// console.log(String.fromCharCode(126));
+// console.log(String.fromCharCode(94));
+// console.log(String.fromCharCode(37));
+
+// let who = "dragon's" + 'mother';
+// console.log(who);
+
+// let eurosCount = 100;
+
+// let dollarsPerEuros = eurosCount * 1.25;
+// console.log(dollarsPerEuros);
+
+// let rublesCount = dollarsPerEuros * 60;
+// console.log(rublesCount);
+
+let eurosCount = 56;
+
+let dollarsPerEuros = eurosCount * 1.25;
+console.log(dollarsPerEuros);
+
+let rublesCount = dollarsPerEuros * 60;
+console.log(rublesCount);
