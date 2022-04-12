@@ -39,7 +39,6 @@
 
 // myName();
 
-
 // Урок 12 Параметры функции
 
 // let myId1;
@@ -96,7 +95,6 @@
 
 // showParams(viewConst1);
 
-
 // let abc = 3 ** 5;
 // let def = -8 / (-4);
 
@@ -122,7 +120,6 @@
 // let rublesCount = dollarsPerEuros * 60;
 // console.log(rublesCount);
 
-
 // Task 23 Hekslet JS
 
 // let eurosCount = 56;
@@ -132,7 +129,6 @@
 
 // let rublesCount = dollarsPerEuros * 60;
 // console.log(rublesCount);
-
 
 // Task 24 Hekslet JS
 
@@ -162,7 +158,6 @@
 
 // console.log(king + ' has ' + (legacyCastle * roomsInCastle) + ' rooms.');
 
-
 // Task 28 Hekslet JS Интерполяция
 
 // const stark = 'Andrey';
@@ -178,7 +173,6 @@
 // const magic = '\nyou'
 // console.log(magic[1]);
 
-
 // Task 29 Hekslet JS Извлечение символа из строки
 
 // спецсимвол \n считается ЗА ОДИН самостоятельный символ, не смотря на то, что он состоит из 2-х знаков
@@ -188,7 +182,6 @@
 // console.log(name[5]);
 
 // в данном примере в консоль выведется символ r
-
 
 // Task 30 Hekslet JS Оператор typeof
 
@@ -200,21 +193,32 @@
 // const type = typeof -0.304;
 // console.log(type);
 
-
 // Task 31 Hekslet JS Undefined
-
 
 // console.log(undefined);
 
 // let abc;
 // console.log(abc);
 
-
 // Task 32 Hekslet JS Неизменяемость примитивных типов
 
-const one = 'Naharis';
-const two = 'Mormont';
-const three = 'Sand';
+// const one = 'Naharis';
+// const two = 'Mormont';
+// const three = 'Sand';
 
-console.log(`${one[2]}  ${two[1]}  ${three[3]}  ${two[4]}  ${two[2]}`);
+// console.log(`${one[2]}  ${two[1]}  ${three[3]}  ${two[4]}  ${two[2]}`);
+
+// Task 34 Hekslet JS Функции и их вызов
+
+// console.log(Math.sign(-18));
+
+// Task 36 Hekslet JS Сигнатура функции
+
+const number = 923.2238;
+const myCeil = Math.ceil(number);
+console.log(myCeil);
+
+const number1 = -19.00258;
+const myCeil1 = Math.ceil(number1);
+console.log(myCeil1);
 
