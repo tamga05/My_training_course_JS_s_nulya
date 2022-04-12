@@ -184,7 +184,12 @@
 // спецсимвол \n считается ЗА ОДИН самостоятельный символ, не смотря на то, что он состоит из 2-х знаков
 // Нумерация символов начинается с 0
 
-const name = 'Na\nharis';
-console.log(name[5]);
+// const name = 'Na\nharis';
+// console.log(name[5]);
 
 // в данном примере в консоль выведется символ r
+
+
+// Task 30 Hekslet JS Оператор typeof
+
+console.log(typeof 'Andrey');
