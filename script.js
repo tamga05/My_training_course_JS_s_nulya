@@ -192,13 +192,13 @@
 
 // Task 30 Hekslet JS Оператор typeof
 
-console.log(typeof 'Andrey');
+// console.log(typeof 'Andrey');
 
-const user = { name: 'Toto', age: 33 };
-console.log(user);
+// const user = { name: 'Toto', age: 33 };
+// console.log(user);
 
-const type = typeof -0.304;
-console.log(type);
+// const type = typeof -0.304;
+// console.log(type);
 
 
 // Task 31 Hekslet JS Undefined
@@ -212,9 +212,9 @@ console.log(type);
 
 // Task 32 Hekslet JS Неизменяемость примитивных типов
 
-const one = 'Naharis';
-const two = 'Mormont';
-const three = 'Sand';
+// const one = 'Naharis';
+// const two = 'Mormont';
+// const three = 'Sand';
 
 console.log(`${one[2]}  ${two[1]}  ${three[3]}  ${two[4]}  ${two[2]}`);
 
