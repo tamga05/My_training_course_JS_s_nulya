@@ -122,10 +122,42 @@
 // let rublesCount = dollarsPerEuros * 60;
 // console.log(rublesCount);
 
-let eurosCount = 56;
 
-let dollarsPerEuros = eurosCount * 1.25;
-console.log(dollarsPerEuros);
+// Task 23 Hekslet JS
 
-let rublesCount = dollarsPerEuros * 60;
-console.log(rublesCount);
+// let eurosCount = 56;
+
+// let dollarsPerEuros = eurosCount * 1.25;
+// console.log(dollarsPerEuros);
+
+// let rublesCount = dollarsPerEuros * 60;
+// console.log(rublesCount);
+
+
+// Task 24 Hekslet JS
+
+// let info = "We couldn't verify you mother's maiden name.";
+// let intro = 'Here is important information about your account security.';
+
+// let firstName = 'Joffrey';
+// let greeting = 'Hello';
+
+// // BEGIN (write your solution here)
+
+// let title = greeting + ', ' + firstName + '!';
+// console.log(title);
+
+// // console.log(info);
+// // console.log(intro);
+
+// let text = intro + '\n' + info;
+// console.log(text);
+
+// Task 26 Hekslet JS
+
+let king = 'King Balon the 6th';
+
+let legacyCastle = 6;
+let roomsInCastle = 17;
+
+console.log(king + ' has ' + (legacyCastle * roomsInCastle) + ' rooms.');
