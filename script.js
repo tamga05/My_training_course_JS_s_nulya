@@ -155,9 +155,36 @@
 
 // Task 26 Hekslet JS
 
-let king = 'King Balon the 6th';
+// let king = 'King Balon the 6th';
 
-let legacyCastle = 6;
-let roomsInCastle = 17;
+// let legacyCastle = 6;
+// let roomsInCastle = 17;
 
-console.log(king + ' has ' + (legacyCastle * roomsInCastle) + ' rooms.');
+// console.log(king + ' has ' + (legacyCastle * roomsInCastle) + ' rooms.');
+
+
+// Task 28 Hekslet JS Интерполяция
+
+// const stark = 'Andrey';
+// const lf = '\n';
+
+// console.log(`Do
+// you
+// want
+// to
+// eat,
+// ${stark}?`);
+
+// const magic = '\nyou'
+// console.log(magic[1]);
+
+
+// Task 29 Hekslet JS Извлечение символа из строки
+
+// спецсимвол \n считается ЗА ОДИН самостоятельный символ, не смотря на то, что он состоит из 2-х знаков
+// Нумерация символов начинается с 0
+
+const name = 'Na\nharis';
+console.log(name[5]);
+
+// в данном примере в консоль выведется символ r
