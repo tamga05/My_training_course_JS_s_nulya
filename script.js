@@ -249,3 +249,19 @@ const lastLetter = text[text.length - 1];
 const letters = (`First: ${firstLetter}\nLast: ${lastLetter}`);
 
 console.log(letters);
+
+
+// Task 40 Hekslet JS Детерминированность
+
+const textLength = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt ';
+
+console.log(textLength.length); // 418
+console.log(textLength[135]);  // m
+console.log(Math.random());
+console.log(Math.random());
+
+console.log(Math.round(Math.random() * 10)); // Функция Каждый раз возвращает Случайное Округленное Целое число
+
+
+const rand = 5.135;
+console.log(Math.floor(rand));
