@@ -265,3 +265,15 @@ console.log(Math.round(Math.random() * 10)); // Функция Каждый ра
 
 const rand = 5.135;
 console.log(Math.floor(rand));
+console.log(Math.sqrt(rand));
+
+const name = 'Robb';
+console.log(name[name.length]); // indefined
+
+
+// Task 45 Hekslet JS Свойства и методы как выражения
+
+const text3 = 'Never forget what you are, for surely the world will not';
+console.log(`First: ${text3[0]}\nLast: ${text3[text3.length - 1]}`);
+
+
