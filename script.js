@@ -120,6 +120,7 @@
 // let rublesCount = dollarsPerEuros * 60;
 // console.log(rublesCount);
 
+
 // Task 23 Hekslet JS
 
 // let eurosCount = 56;
@@ -149,6 +150,7 @@
 // let text = intro + '\n' + info;
 // console.log(text);
 
+
 // Task 26 Hekslet JS
 
 // let king = 'King Balon the 6th';
@@ -157,6 +159,7 @@
 // let roomsInCastle = 17;
 
 // console.log(king + ' has ' + (legacyCastle * roomsInCastle) + ' rooms.');
+
 
 // Task 28 Hekslet JS Интерполяция
 
@@ -173,6 +176,7 @@
 // const magic = '\nyou'
 // console.log(magic[1]);
 
+
 // Task 29 Hekslet JS Извлечение символа из строки
 
 // спецсимвол \n считается ЗА ОДИН самостоятельный символ, не смотря на то, что он состоит из 2-х знаков
@@ -182,6 +186,7 @@
 // console.log(name[5]);
 
 // в данном примере в консоль выведется символ r
+
 
 // Task 30 Hekslet JS Оператор typeof
 
@@ -193,12 +198,14 @@
 // const type = typeof -0.304;
 // console.log(type);
 
+
 // Task 31 Hekslet JS Undefined
 
 // console.log(undefined);
 
 // let abc;
 // console.log(abc);
+
 
 // Task 32 Hekslet JS Неизменяемость примитивных типов
 
@@ -208,17 +215,37 @@
 
 // console.log(`${one[2]}  ${two[1]}  ${three[3]}  ${two[4]}  ${two[2]}`);
 
+
 // Task 34 Hekslet JS Функции и их вызов
 
 // console.log(Math.sign(-18));
 
-// Task 36 Hekslet JS Сигнатура функции
+
+// Task 36 Hekslet JS Сигнатура функции. Функция Округления до ближайшего Большего целого числа
 
 const number = 923.2238;
 const myCeil = Math.ceil(number);
 console.log(myCeil);
 
 const number1 = -19.00258;
-const myCeil1 = Math.ceil(number1);
-console.log(myCeil1);
+//const myCeil1 = Math.ceil(number1);
+console.log(Math.ceil(number1));
 
+
+// Task 36 Hekslet JS Функция Округления до ближайшего целого числа
+
+const number2 = 923.2238;
+const myRound = Math.round(number2);
+console.log(myRound);
+
+
+// Task 38 Hekslet JS Вызов функции — выражение
+
+const text = 'Never forget what you are, for surely the world will not';
+
+const firstLetter = text[0];
+const lastLetter = text[text.length - 1];
+
+const letters = (`First: ${firstLetter}\nLast: ${lastLetter}`);
+
+console.log(letters);
