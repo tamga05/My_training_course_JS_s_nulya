@@ -277,3 +277,21 @@ const text3 = 'Never forget what you are, for surely the world will not';
 console.log(`First: ${text3[0]}\nLast: ${text3[text3.length - 1]}`);
 
 
+// Task 46 Hekslet JS Цепочка вызовов
+
+const name4 = 'Tirion';
+console.log(name4.toUpperCase().toLowerCase());  // tirion
+console.log(name4.toUpperCase().toLowerCase().length.toString().length);  // 1
+
+const text5 = 'When \t\n you play a \t\n game of thrones you win or you die.';
+console.log(text5.slice(4, 15).trim().length); // 7
+
+
+// Task 47 Hekslet JS Создание функций
+
+function superSum(a, b) {
+    alert(a + b);
+    console.log(a + b);
+}
+
+superSum(15, 4);
