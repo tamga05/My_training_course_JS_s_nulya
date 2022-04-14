@@ -298,14 +298,29 @@ getRandomNumber();
 
 console.log(console.log("Wow")); // undefined
 
-
 // Task 49 Hekslet JS Параметры функций
 
 function truncate(str, simbol) {
 
-    const strSlice = str.slice(0, simbol);
+	const strSlice = str.slice(0, simbol);
 
-    console.log(`${strSlice}...`);
+	console.log(`${strSlice}...`);
 }
 
-truncate('Если на Отчизну нагрянет беда', 20);
+truncate("Если на Отчизну нагрянет беда", 20);
+
+
+// Task 50 Hekslet JS Необязательные параметры функций
+
+function getHiddenCard(str, stars) {
+
+	//const numberCard = str.slice(12);
+
+	//const star = '*'.repeat(stars);
+
+	console.log(`${'*'.repeat(stars)}${str.slice(12)}`);
+
+	//return ();
+}
+
+getHiddenCard('1234567891012345', 4);
