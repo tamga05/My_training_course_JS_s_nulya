@@ -301,11 +301,11 @@ console.log(console.log("Wow")); // undefined
 
 // Task 49 Hekslet JS Параметры функций
 
-function truncate(str) {
+function truncate(str, simbol) {
 
-    const strSlice = str.slice(0, 15);
+    const strSlice = str.slice(0, simbol);
 
     console.log(`${strSlice}...`);
 }
 
-truncate('Если на Отчизну нагрянет беда');
+truncate('Если на Отчизну нагрянет беда', 20);
