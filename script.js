@@ -349,3 +349,14 @@ console.log(isPensioner(61)); // true
 const isMister = (text) => text === 'Mister';
 console.log(isMister('Moscow'));
 
+console.log(11%7);
+
+
+// Task 54 Hekslet JS Комбинирование логических операций
+
+const isInternationalPhone = (phoneNumber) => {
+	const firstSign = phoneNumber[0];
+	console.log(firstSign === '+');
+}
+
+isInternationalPhone('+79684045154'); // true
