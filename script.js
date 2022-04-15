@@ -298,7 +298,7 @@ getRandomNumber();
 
 console.log(console.log("Wow")); // undefined
 
-// Task 49 Hekslet JS Параметры функций
+// Task 49 Hekslet JS Параметры функции
 
 function truncate(str, simbol) {
 
@@ -310,7 +310,7 @@ function truncate(str, simbol) {
 truncate("Если на Отчизну нагрянет беда", 20);
 
 
-// Task 50 Hekslet JS Необязательные параметры функций
+// Task 50 Hekslet JS Необязательные параметры функции
 
 function getHiddenCard(str, stars) {
 
@@ -326,17 +326,26 @@ function getHiddenCard(str, stars) {
 getHiddenCard('1234567891012345', 4);
 
 
-// Task 51 Hekslet JS Упрощенный синтаксис функций
+// Task 51 Hekslet JS Упрощённый синтаксис функции (сокращённая форма)
 
 const exponentiation = (x, y) => x ** y;
 console.log(exponentiation(2, 5));
+
+const del = x => x / 3;
+console.log(del(0.18)); // 0.06
 
 
 // Task 52 Hekslet JS Логический тип
 
 const isInfant = (age) => age < 1;
-console.log(isInfant(3));
-
+console.log(isInfant(3)); // false
 
 const isPensioner = (age) => age >= 60;
-console.log(isPensioner(61));
+console.log(isPensioner(61)); // true
+
+
+// Task 53 Hekslet JS Функции предикаты
+
+const isMister = (text) => text === 'Mister';
+console.log(isMister('Moscow'));
+
