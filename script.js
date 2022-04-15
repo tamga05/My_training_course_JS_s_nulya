@@ -324,3 +324,19 @@ function getHiddenCard(str, stars) {
 }
 
 getHiddenCard('1234567891012345', 4);
+
+
+// Task 51 Hekslet JS Упрощенный синтаксис функций
+
+const exponentiation = (x, y) => x ** y;
+console.log(exponentiation(2, 5));
+
+
+// Task 52 Hekslet JS Логический тип
+
+const isInfant = (age) => age < 1;
+console.log(isInfant(3));
+
+
+const isPensioner = (age) => age >= 60;
+console.log(isPensioner(61));
