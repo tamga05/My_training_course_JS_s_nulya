@@ -360,3 +360,52 @@ const isInternationalPhone = (phoneNumber) => {
 }
 
 isInternationalPhone('+79684045154'); // true
+
+
+// Високосный ли год???
+
+const isLeapYear = (year) => {
+	const result = year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
+	console.log(result);
+}
+
+isLeapYear(1972);
+
+
+// Task 54 Hekslet JS Комбинирование логических операций
+
+const isPalindrome = (text) => {  // Функция проверяет, является ли Предложение палиндромом
+
+	const textLower = text.toLowerCase();
+
+	const textDel = textLower.replace(/\s/g, ''); // метод replace удаляет из предложения всё, кроме букв
+
+	const textRevers = textDel.split('').reverse().join(''); // таким методом осуществляется переворот строки
+
+	return textDel === textRevers;
+}
+
+console.log(isPalindrome('Аргентина манит негра'));
+console.log(isPalindrome('Лёша на полке клопа нашёл'));
+console.log(isPalindrome('А роза упала на лапу Азора'));
+console.log(isPalindrome('А в Енисее синева'));
+
+
+// Task 56 Hekslet JS Комбинирование логических операций
+
+const isPalindrome1 = (word) => {  // Функция проверяет, является ли Слово палиндромом
+
+	const wordLower = word.toLowerCase();
+
+	//const wordDel = wordLower.replace(/[^a-zа-яё]/gi, ''); // метод replace удаляет из предложения всё, кроме букв
+
+	const wordRevers = wordLower.split("").reverse().join(""); // таким методом осуществляется переворот строки
+
+	return wordRevers === wordLower;
+
+}
+
+console.log(isPalindrome1('МаМаМ'));
+console.log(isPalindrome1('КАзаК'));
+console.log(isPalindrome1('шИш'));
+
