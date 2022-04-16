@@ -400,9 +400,22 @@ console.log(isPalindrome1("МаМаМ"));
 console.log(isPalindrome1("КАзаК"));
 console.log(isPalindrome1("шИш"));
 
-
 // Task 57 Hekslet JS Результат логических выражений
 
-const getLetter = (text, number) => text[number - 1] || '';
-console.log(getLetter('Москва - столица', 8));
+const getLetter = (text, number) => text[number - 1] || ""; // Функция выводит Символ строки ПО НОМЕРУ (не по символу) и если такой Символ отсутствует, // то будет выведена пустая строка
+console.log(getLetter("Москва - столица", 8));
 
+
+// Task 58 Hekslet JS Условная конструкция (if)
+
+const getTypeOfSentence = (text) => {
+	const lastChar = text[text.length - 1];
+	if (lastChar === "?") {
+		return "question";
+	}
+
+	return "general";
+};
+
+console.log(getTypeOfSentence("Который час")); // general
+console.log(getTypeOfSentence("Который час?")); // question
