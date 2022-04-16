@@ -301,7 +301,6 @@ console.log(console.log("Wow")); // undefined
 // Task 49 Hekslet JS Параметры функции
 
 function truncate(str, simbol) {
-
 	const strSlice = str.slice(0, simbol);
 
 	console.log(`${strSlice}...`);
@@ -309,31 +308,27 @@ function truncate(str, simbol) {
 
 truncate("Если на Отчизну нагрянет беда", 20);
 
-
 // Task 50 Hekslet JS Необязательные параметры функции
 
 function getHiddenCard(str, stars) {
-
 	//const numberCard = str.slice(12);
 
 	//const star = '*'.repeat(stars);
 
-	console.log(`${'*'.repeat(stars)}${str.slice(12)}`);
+	console.log(`${"*".repeat(stars)}${str.slice(12)}`);
 
 	//return ();
 }
 
-getHiddenCard('1234567891012345', 4);
-
+getHiddenCard("1234567891012345", 4);
 
 // Task 51 Hekslet JS Упрощённый синтаксис функции (сокращённая форма)
 
 const exponentiation = (x, y) => x ** y;
 console.log(exponentiation(2, 5));
 
-const del = x => x / 3;
+const del = (x) => x / 3;
 console.log(del(0.18)); // 0.06
-
 
 // Task 52 Hekslet JS Логический тип
 
@@ -343,57 +338,54 @@ console.log(isInfant(3)); // false
 const isPensioner = (age) => age >= 60;
 console.log(isPensioner(61)); // true
 
-
 // Task 53 Hekslet JS Функции предикаты
 
-const isMister = (text) => text === 'Mister';
-console.log(isMister('Moscow'));
+const isMister = (text) => text === "Mister";
+console.log(isMister("Moscow"));
 
-console.log(11%7);
-
+console.log(11 % 7);
 
 // Task 54 Hekslet JS Комбинирование логических операций
 
 const isInternationalPhone = (phoneNumber) => {
 	const firstSign = phoneNumber[0];
-	console.log(firstSign === '+');
-}
+	console.log(firstSign === "+");
+};
 
-isInternationalPhone('+79684045154'); // true
-
+isInternationalPhone("+79684045154"); // true
 
 // Високосный ли год???
 
 const isLeapYear = (year) => {
 	const result = year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
 	console.log(result);
-}
+};
 
 isLeapYear(1972);
 
-
 // Task 54 Hekslet JS Комбинирование логических операций
 
-const isPalindrome = (text) => {  // Функция проверяет, является ли Предложение палиндромом
+const isPalindrome = (text) => {
+	// Функция проверяет, является ли Предложение палиндромом
 
 	const textLower = text.toLowerCase();
 
-	const textDel = textLower.replace(/\s/g, ''); // метод replace удаляет из предложения всё, кроме букв
+	const textDel = textLower.replace(/\s/g, ""); // метод replace удаляет из предложения всё, кроме букв
 
-	const textRevers = textDel.split('').reverse().join(''); // таким методом осуществляется переворот строки
+	const textRevers = textDel.split("").reverse().join(""); // таким методом осуществляется переворот строки
 
 	return textDel === textRevers;
-}
+};
 
-console.log(isPalindrome('Аргентина манит негра'));
-console.log(isPalindrome('Лёша на полке клопа нашёл'));
-console.log(isPalindrome('А роза упала на лапу Азора'));
-console.log(isPalindrome('А в Енисее синева'));
-
+console.log(isPalindrome("Аргентина манит негра"));
+console.log(isPalindrome("Лёша на полке клопа нашёл"));
+console.log(isPalindrome("А роза упала на лапу Азора"));
+console.log(isPalindrome("А в Енисее синева"));
 
 // Task 56 Hekslet JS Комбинирование логических операций
 
-const isPalindrome1 = (word) => {  // Функция проверяет, является ли Слово палиндромом
+const isPalindrome1 = (word) => {
+	// Функция проверяет, является ли Слово палиндромом
 
 	const wordLower = word.toLowerCase();
 
@@ -402,10 +394,15 @@ const isPalindrome1 = (word) => {  // Функция проверяет, явл�
 	const wordRevers = wordLower.split("").reverse().join(""); // таким методом осуществляется переворот строки
 
 	return wordRevers === wordLower;
+};
 
-}
+console.log(isPalindrome1("МаМаМ"));
+console.log(isPalindrome1("КАзаК"));
+console.log(isPalindrome1("шИш"));
 
-console.log(isPalindrome1('МаМаМ'));
-console.log(isPalindrome1('КАзаК'));
-console.log(isPalindrome1('шИш'));
+
+// Task 57 Hekslet JS Результат логических выражений
+
+const getLetter = (text, number) => text[number - 1] || '';
+console.log(getLetter('Москва - столица', 8));
 
