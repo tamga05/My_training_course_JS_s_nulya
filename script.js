@@ -419,3 +419,14 @@ const getTypeOfSentence = (text) => {
 
 console.log(getTypeOfSentence("Который час")); // general
 console.log(getTypeOfSentence("Который час?")); // question
+
+
+const guessNumber = (number) => {
+
+	if (number === 42)
+	return 'You win!';
+
+	return 'Try again!';
+}
+
+console.log(guessNumber("41")); // Try again!
