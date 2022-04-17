@@ -423,10 +423,12 @@ console.log(getTypeOfSentence("Который час?")); // question
 
 const guessNumber = (number) => {
 
-	if (number === 42)
-	return 'You win!';
-
-	return 'Try again!';
+	if (number === 42) {
+		return 'You win!';
+	}
+	else {
+		return 'Try again!';
+	}
 }
 
-console.log(guessNumber("41")); // Try again!
+console.log(guessNumber(41)); // Try again!
