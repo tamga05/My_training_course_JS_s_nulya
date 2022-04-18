@@ -469,24 +469,18 @@ const whoIsThisHouseToStarks = (family) => {
 console.log(whoIsThisHouseToStarks('nik'));
 
 
-//! Исправить закомментированное решение
+const num = (number) => {
 
-// const num = (number) => {
+	if (number > 0 && number < 100 ) {
+		return 'десятки';
+	} else if (number === 100) {
+		return 'сотни';
+	} else {
+		return 'ХЗ';
+	}
+}
 
-// 	let myNumber;
-
-// 	if (number < 100) {
-// 		myNumber = 'десятки';
-// 	} else if (number = 100) {
-// 		myNumber = 'сотни';
-// 	} else {
-// 		myNumber = 'ХЗ';
-// 	}
-
-// 	return myNumber;
-// }
-
-// console.log(num(101));
+console.log(num(-5));
 
 
 //! Исправить закомментированное решение
@@ -548,3 +542,21 @@ const getNumberExplanation1 = (number) => {
 }
 
 console.log(getNumberExplanation(666));
+
+
+const quarterOf = (month) => {
+	if (month >= 1 && month <= 3) {
+		return "is part of the first quarter";
+	} else if (month >= 4 && month <= 6) {
+		return "is part of the second quarter";
+	} else if (month >= 7 && month <= 9) {
+		return "is part of the third quarter";
+	} else if (month >= 10 && month <= 12) {
+		return "is part of the fourth quarter";
+	} else {
+		return "value is not correct";
+	}
+}
+
+console.log(quarterOf(10));
+
