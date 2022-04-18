@@ -459,10 +459,92 @@ const whoIsThisHouseToStarks = (family) => {
 		whoIsThis = 'friend';
 	} else if (family === 'Lannister' || family === 'Frey') {
 		whoIsThis = 'enemy';
-	} else
+	} else {
 		whoIsThis = 'neutral';
+	}
 
 	return whoIsThis;
 }
 
-console.log(whoIsThisHouseToStarks('Frey'));
+console.log(whoIsThisHouseToStarks('nik'));
+
+
+//! Исправить закомментированное решение
+
+// const num = (number) => {
+
+// 	let myNumber;
+
+// 	if (number < 100) {
+// 		myNumber = 'десятки';
+// 	} else if (number = 100) {
+// 		myNumber = 'сотни';
+// 	} else {
+// 		myNumber = 'ХЗ';
+// 	}
+
+// 	return myNumber;
+// }
+
+// console.log(num(101));
+
+
+//! Исправить закомментированное решение
+
+// const convertText = (string) => {
+
+// 	let firstLetter = string[0];
+
+// 	let myText;
+
+// 	if (string === '') {
+// 		return '';
+// 	}
+
+// 	if (firstLetter !== string[0].toUpperCase) {
+// 		myText = string.split("").reverse().join("");
+// 	// } else if (firstLetter === string[0].toUpperCase) {
+// 	// 	myText = string;
+// 	} else {
+// 		myText = string;
+// 	}
+
+// 	return myText;
+// }
+
+// console.log(convertText('моя история'));
+
+
+const getNumberExplanation = (number) => {
+
+	if (number === 666) {
+		return 'devil number';
+	} else if (number === 42) {
+		return 'answer for everything';
+	} else if (number === 7) {
+		return 'prime number';
+	} else {
+		return 'null';
+	}
+}
+
+
+// Task 62 Hekslet JS Конструкция Switch
+
+console.log(getNumberExplanation(42));
+
+const getNumberExplanation1 = (number) => {
+
+	switch (number) {
+		case 666:
+			return 'devil number';
+		case 42:
+			return 'answer for everything';
+		case 7:
+			return 'prime number';
+		default:
+			return 'null';
+	}
+}
+
+console.log(getNumberExplanation(666));
