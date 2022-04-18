@@ -560,3 +560,17 @@ const quarterOf = (month) => {
 
 console.log(quarterOf(10));
 
+
+function booleanToString(b) {
+	return b.toString();
+}
+
+booleanToString(true);
+
+
+function century(year) {
+	let numberCentury;
+	return numberCentury = Math.ceil(year / 100);
+}
+
+console.log(century(1945));
