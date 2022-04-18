@@ -405,7 +405,6 @@ console.log(isPalindrome1("шИш"));
 const getLetter = (text, number) => text[number - 1] || ""; // Функция выводит Символ строки ПО НОМЕРУ (не по символу) и если такой Символ отсутствует, // то будет выведена пустая строка
 console.log(getLetter("Москва - столица", 8));
 
-
 // Task 58 Hekslet JS Условная конструкция (if)
 
 const getTypeOfSentence = (text) => {
@@ -420,15 +419,33 @@ const getTypeOfSentence = (text) => {
 console.log(getTypeOfSentence("Который час")); // general
 console.log(getTypeOfSentence("Который час?")); // question
 
-
 const guessNumber = (number) => {
-
 	if (number === 42) {
-		return 'You win!';
+		return "You win!";
+	} else {
+		return "Try again!";
 	}
-	else {
-		return 'Try again!';
-	}
-}
+};
 
 console.log(guessNumber(41)); // Try again!
+console.log(guessNumber(42)); // You win!
+
+
+// Task 59 Hekslet JS else Функция выполняет нормализацию данных. Она принимает адрес сайта и возвращает его с https:// в начале.
+
+const normalizeUrl = (address) => {
+
+	let addressNorm;
+
+	if (address === address.startsWith('https://')) {
+		addressNorm = address;
+	} else {
+		addressNorm = `https://${address}`;
+	}
+
+	return addressNorm;
+}
+
+console.log(normalizeUrl('ozon.ru'));
+
+
