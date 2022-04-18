@@ -449,3 +449,20 @@ const normalizeUrl = (address) => {
 console.log(normalizeUrl('ozon.ru'));
 
 
+// Task 60 Hekslet JS Конструкция else if
+
+const whoIsThisHouseToStarks = (family) => {
+
+	let whoIsThis;
+
+	if (family === 'Karstark' || family === 'Tally') {
+		whoIsThis = 'friend';
+	} else if (family === 'Lannister' || family === 'Frey') {
+		whoIsThis = 'enemy';
+	} else
+		whoIsThis = 'neutral';
+
+	return whoIsThis;
+}
+
+console.log(whoIsThisHouseToStarks('Frey'));
