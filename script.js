@@ -612,3 +612,51 @@ const multiplyNumbersFromRange = () => {
 }
 
 multiplyNumbersFromRange(1, 5);
+
+
+const joinNumbersFromRange = (num1, num2) => {
+	let result = '';
+
+	while (num1 <= num2) {
+		result = `${result}${num1}`;
+		console.log(result);
+		num1 = num1 + 1;
+	}
+
+	return result;
+}
+
+joinNumbersFromRange(5, 10);
+
+
+//! Исправить закомментированное решение
+
+// const printReversedWordBySymbol = (word) => {
+// 	let i = word.length - 1;
+// 	while (i >= 0) {
+// 		console.log(word[i]);
+// 		i = i - 1;
+// 	}
+// }
+
+// console.log('Джин');
+
+
+
+// Task 68 Hekslet JS Формирование строк в циклах
+
+const reverse = (str) => {
+	let i = str.length - 1;
+	// Нейтральный элемент для строк это пустая строка
+	let result = "";
+
+	while (i >= 0) {
+		// Соединяем в обратном порядке
+		result = `${result}${str[i]}`;
+		i = i - 1;
+	}
+
+	return result;
+};
+
+console.log(reverse('Привет из России')); // Функция переворачивает всю строку
