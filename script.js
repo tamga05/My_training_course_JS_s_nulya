@@ -597,6 +597,18 @@ const printNumbers = () => {
 		i = i - 1;
 	}
 	console.log("finished!");
-};
+}
 
 printNumbers();
+
+const multiplyNumbersFromRange = () => {
+	let i = 1;
+	let multiply = 1;
+	while (i <= 5) {
+		multiply = multiply * i;
+		console.log(multiply);
+		i = i + 1;
+	}
+}
+
+multiplyNumbersFromRange(1, 5);
