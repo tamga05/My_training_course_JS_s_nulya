@@ -574,3 +574,17 @@ function century(year) {
 }
 
 console.log(century(1945));
+
+
+// Task 63 Hekslet JS Цикл While
+
+const numberFile = () => {
+	let i = 1;
+	while (i <= 5) {
+		console.log(i);
+		i = i + 1;
+	}
+	console.log('FINISH');
+}
+
+numberFile(5);
