@@ -642,7 +642,6 @@ joinNumbersFromRange(5, 10);
 // console.log('Джин');
 
 
-
 // Task 68 Hekslet JS Формирование строк в циклах
 
 const reverse = (str) => {
@@ -659,4 +658,27 @@ const reverse = (str) => {
 	return result;
 };
 
-console.log(reverse('Привет из России')); // Функция переворачивает всю строку
+console.log(reverse('Привет из России')); // Функция переворачивает Наоборот Всю строку
+
+
+const hasChar = (str, char) => {
+	let i = 0;
+	while (i < str.length) {
+		if (str[i] === char) {
+			return true;
+		}
+
+		i += 1;
+	}
+
+	return false;
+}
+
+
+const countYuan = (dollarsUSA) => {
+	let YuanPerDollar = 6.75;
+	let counter = (YuanPerDollar * dollarsUSA).toFixed(2);
+	return `'${counter} Chinese Yuan'`;
+}
+
+console.log(countYuan(15)); // Конвертер долларов США в китайские юани
